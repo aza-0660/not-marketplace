@@ -1,0 +1,37 @@
+.join{
+    min-height: 550px;
+    width: 100%;
+    .container{
+        max-width: 1050px;
+    }
+    .join_items{
+        min-height: 550px;
+        width: 100%;
+        padding-top: 40px;
+        .join_content{
+            min-height: 430px;    
+            width: 100%;
+            border-radius: 20px;
+            background-color: #3b3b3b;  
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            padding: 60px;
+            gap: 60px;
+            .join_info{
+                width: 425px;
+
+                .join_title{
+                    @include title-style;
+
+                }
+                .join_subtitle{
+                    @include subtitle-style;
+                }
+                form{
+                   @include form_style;
+                }
+            }
+         }
+    }
+}

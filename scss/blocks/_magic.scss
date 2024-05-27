@@ -1,0 +1,87 @@
+
+.magic{
+    min-height: 640px;
+    width: 100%;
+    background: linear-gradient((180.00deg, rgba(162, 89, 255, 0),rgb(162, 89, 255) 100%)), url('../../img/magic-mashroom.png') center center/cover no-repeat;
+    .container{
+        max-width: 1050px;
+        
+    }
+    .magic_items {
+        min-height: 640px;
+        width: 100%;
+        padding-top: 360px;
+        .magic_person {
+            height: 44px;
+            width: 151px;
+            border-radius: 20px;
+            background-color: #2b2b2b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            .person_name {
+                color: #fff;
+            }
+        }
+        .magic_content {
+            min-height: 144px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-top: 30px;
+            .magic_left {
+                .magic_title {
+                    @include title-style;
+                    font-size: 51px;
+                }
+                .magic_btn {
+                    @include fill-btn-style;
+                    background-color: #fff;
+                    color: $main-color;
+                    padding: 19px 50px;
+                    &:hover {
+                        border-color: #fff;
+                        color: #fff;
+                    }
+                }
+            }
+            .magic_time {
+                width: 295px;
+                height: 144px;
+                border-radius: 20px;
+                background-color: rgba(59, 59, 59, 0.5);
+                padding: 30px;
+                .time_title {
+                    font-size: 12px;
+                    color: #fff;
+                    font-family: 'Space Mono', monospace;
+                }
+                .time_main {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+                    font-size: 28px;
+                    font-weight: 700;
+                    color: #fff;
+                    font-family: 'Space Mono', monospace;
+                    .time_item {
+                        .time_num {
+                            font-size: 38px;
+                            font-weight: 700;
+                        }
+                        .time_name {
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+        .magic_small_items {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.discover{
+    min-height: 780px;
+    width: 100%;
+    .container{
+        max-width: 1050px;
+    }
+    .discover_items{
+        min-height: 780px;
+        width: 100%;
+        padding-top: 80px;
+        .discover_header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .discover_titles{
+                .discover_title{
+                    @include title-style;
+                }
+                .discover_subtitle{
+                    @include subtitle-style;
+                }
+            }
+            .discover_btn{
+                @include empty-btn-style;
+            }
+            
+        }
+        .discover_content{
+            width: 100%;
+           display: flex;
+            margin-top: 60px;
+           gap: 30px; 
+           .discover_item{
+            height: 469px;
+            width: 330px;
+            border-radius: 20px;
+            background-color: #3b3b3b;
+            @include up-animation;
+            .item_text{
+                padding: 20px 30px;
+            }
+            .item_title{
+                text-align: start;
+                color: rgb(255, 255, 255);
+                font-family: Work Sans;
+                font-size: 22px;
+                font-weight: 600;
+                text-align: left;
+            }
+          .item_person{
+            display: flex;
+            color: rgb(255, 255, 255);
+            gap: 12px;
+           
+          }
+          .item_info{
+            display: flex;
+            justify-content: space-between;
+            .price_title, .value_title{
+                color: rgb(133, 133, 132);
+                font-size: 12px;
+                padding-top: 25px;
+            }
+            .price_num, .value_num{
+                color: rgb(255, 255, 255);
+            }
+          }
+          
+
+           }
+        }
+        .discover_small_btn {
+            display: none;
+        }
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .discover_content{
+//     width: 100%;
+//     display: flex;
+//     margin-top: 60px;
+//     gap: 30px;
+//     .discover_item{
+//         min-height: 469px;
+//         width: 330px;
+//         border-radius: 20px 20px 0 0;
+//         background-color: #3b3b3b;
+//         display: flex;
+//         align-items: start;
+//         border-radius: 20px;
+//         .item_img{
+//             display: flex;
+//             align-items: start;
+//             .item_title{
+//                 display: flex;
+//                 text-align: center;
+               
+//             }
+//         }
+//     }
+// }

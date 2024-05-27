@@ -1,0 +1,99 @@
+@mixin fill-btn-style{
+    border-radius: 20px;
+    background-color: $main-color;
+    color: #fff;
+    border: 1px solid $main-color;
+    font-weight: 600;
+    transition: 0.3s all;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &:hover{
+        transition: 0.3s all;
+        background: none;
+    }
+}
+
+@mixin up-animation {
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover{
+        transition: 0.3s all;
+        transform: translate(5px,-5px);
+        box-shadow: -5px 5px 15px 5px #000;
+    }
+}
+@mixin title-style {
+color: rgb(255, 255, 255);
+font-size: 38px;
+font-weight: 600;
+text-transform: capitalize;
+@media(max-width: 992px){
+    font-size: 28px;
+}
+
+}
+@mixin subtitle-style {
+ color: rgb(255, 255, 255);
+font-size: 22px;
+text-transform: capitalize;
+@media(max-width: 992px){
+    font-size: 16px;
+}
+
+}
+
+@mixin empty-btn-style{
+padding: 19px 50px;
+border-radius: 20px;
+border: 2px solid $main-color;
+background: none;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 600;
+gap: 12px;
+transition: 0.3s all;
+i{
+    color: $main-color;
+}
+&:hover {
+    transition: 0.3s all;
+    background-color: $main-color;
+    color: #fff;
+    i{
+        color: #fff;
+    }
+}
+}
+
+@mixin form_style{
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    input{
+        width: 100%;
+        height: 60px;
+        border-radius: 20px;
+        padding-left: 20px;
+        border: none;
+        outline: none;
+    }
+    button{
+        @include fill-btn-style;
+        height: 60px;
+        width: 211px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        &:hover{
+            color: $main-color;
+        }
+    }
+   
+}

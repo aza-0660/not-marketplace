@@ -1,0 +1,69 @@
+.collection {
+    min-height: 836px;
+    width: 100%;
+    .container {
+        max-width: 1050px;
+    }
+    .collection_items {
+        min-height: 836px;
+        width: 100%;
+        padding-top: 80px;
+        .collection_title {
+            @include title-style;
+        }
+        .collection_subtitle {
+            @include subtitle-style;
+        }
+        .collection_content {
+            width: 100%;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            .collection_item {
+                width: 330px;
+                .item_img {
+                    width: 100%;
+                    @include up-animation;
+                    border-radius: 20px;
+                }
+                .item_small_icons {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 15px;
+                    img {
+                        @include up-animation;
+                        border-radius: 20px;
+                    }
+                    button {
+                        @include fill-btn-style;
+                        height: 100px;
+                        width: 100px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        font-weight: 700;
+                        font-family: 'Space Mono', sans-serif;
+                    }
+                }
+                .item_title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #fff;
+                    margin-top: 15px;
+                }
+                .item_person {
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    .item_name {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

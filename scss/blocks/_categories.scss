@@ -1,0 +1,42 @@
+.categories {
+    min-height: 926px;
+    width: 100%;
+    .container {
+        max-width: 1050px;
+    }
+    .categories_items {
+        min-height: 926px;
+        width: 100%;
+        padding-top: 80px;
+        .categories_title {
+            @include title-style;
+        }
+        .categories_content {
+            min-height: 660px;
+            width: 100%;
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 240px);
+            grid-template-rows: repeat(2, 316px);
+            justify-content: space-between;
+            align-content: space-between;
+            .categories_item {
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                background-color: #3b3b3b;
+                @include up-animation;
+                .item_img {
+                    width: 100%;
+                    border-radius: 20px 20px 0 0;
+                }
+                .item_text {
+                    padding: 20px 30px;
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

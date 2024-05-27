@@ -1,0 +1,83 @@
+.footer {
+    min-height: 334px;
+    width: 100%;
+    background-color: #3b3b3b;
+    .container {
+        max-width: 1050px;
+    }
+    .footer_items {
+        min-height: 334px;
+        width: 100%;
+        padding-top: 40px;
+        .footer_main {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #858584;
+            .footer_item {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 20px;
+                .footer_logo {
+                    margin-bottom: 5px;
+                }
+                .footer_title {
+                    color: rgb(255, 255, 255);
+                    font-family: 'Space Mono', monospace;
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-bottom: 5px;
+                }
+                .footer_text {
+                    color: #cccccc;
+                }
+                .footer_socials {
+                    .social_icons {
+                        display: flex;
+                        gap: 10px;
+                        margin-top: 15px;
+                        a {
+                            font-size: 28px;
+                            color: #858584;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .footer_list {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    li {
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .footer_form {
+                    @include form_style;
+                    margin: 0;
+                }
+                &:nth-child(1) {
+                    width: 327.41px;
+                    padding-right: 84px;
+                }
+                &:nth-child(2) {
+                    width: 240px;
+                }
+                &:nth-child(3) {
+                }
+            }
+        }
+        .footer_down {
+            width: 100%;
+            padding-top: 20px;
+            color: #cccccc;
+        }
+    }
+}
